@@ -1,0 +1,190 @@
+:root {
+    --shadow-color: #00000033;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: var(--text-color);
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h2 span {
+    color: var(--primary-color);
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    padding: 12px;
+    position: relative;
+}
+
+
+
+.card:hover {
+    box-shadow: 0 12px 24px var(--shadow-color);
+    transform: translateY(-2px);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+/* .project-container:hover .card {
+    filter:grayscale(90%); 
+
+}
+.project-container .card:hover {
+    filter:saturate(100%);
+} */
+
+
+
+.card-image {
+    position: relative;
+    /* Needed for positioning of the images */
+    justify-content: center;
+    /* Horizontally center the images */
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0 40px;
+    /* Add 20px space on both left and right */
+    box-sizing: border-box;
+    /* Ensure padding is included in the width */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Ensure the image behaves like a block-level element */
+}
+
+.card-image .original-image {
+    z-index: 2;
+    /* This will be the top image */
+}
+
+.card-image .blurred-image {
+    filter: blur(20px);
+    /* Applies blur to the image */
+    transform: scale(2);
+    /* Scales the image */
+    z-index: 1;
+    /* This will be the blurred image below */
+    position: absolute;
+    /* Ensure it is positioned correctly behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+
+.card-content {
+
+    padding: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px);
+}
+
+.card-text-content {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.card-text {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease-out 0.6s backwards;
+
+}
+
+.btn-github {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.btn-github:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: translateY(-3px);
+}
+
+.btn-demo {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.btn-demo:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 768px) {
+
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}

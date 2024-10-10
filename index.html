@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Bean</title>
+    <link rel="icon" href="./assets/img/logo1.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
+    <link rel="stylesheet" href="./assets/css/anination.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <!-- <link rel="stylesheet" href="./assets/css/test.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#home">
+                    <img src="./assets/img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="dark-mode-toggle">🌙</button>
+        </header>
+        <main>
+            <div class="profile-image">
+                <div class="profile-circle">
+                    <img src="./assets/img/loko.png" alt="Mr. Bean">
+                </div>
+            </div>
+
+            <div class="content">
+                <section id="home">
+                    <h1>I'm <span>Ranjan Shettigar</span></h1>
+                    <p>Welcome to my portfolio! I’m passionate about blending technology with creativity, from building
+                        circuits and producing music to writing code and crafting designs. I focus on turning ideas into
+                        reality, pushing the boundaries of innovation and artistry. Explore my projects to see how I
+                        combine
+                        skills and creativity to create unique and impactful solutions.</p>
+
+                        <a href="#contact">
+                            <button class="cta-button">Let's Connect</button>
+                        </a>
+                        
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ranjanshettigar/" class="fab fa-linkedin" target="_blank"
+                            rel="noopener" title="LinkedIn"></a>
+                        <a href="https://github.com/Student408" target="_blank" rel="noopener noreferrer noopener"
+                            class="fab fa-github" title="GitHub"></a>
+                        <a href="https://buymeacoffee.com/theloko" class="fas fa-coffee" target="_blank"
+                            rel="noopener noreferrer" aria-label="Buy Me a Coffee"></a>
+                    </div>
+                </section>
+            </div>
+            
+        </main>
+        <section class="animation">
+            <ul id="downArrow">
+                <li style="--i:1"></li>
+                <li style="--i:2"></li>
+                <li style="--i:3"></li>
+            </ul>
+        </section>
+        <section class="project" id="project">
+            <h2>My <span>Projects</span></h2>
+            <div id="project-container" class="project-container">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <div class="contact-form">
+            <h2>Let's stay connected</h2>
+
+            <!-- Using a private email service -->
+
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Teddy">
+
+                <label for="email">Email:</label>
+                <input type="email" id="to_email" name="email" required placeholder="teddy@loko.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required
+                    placeholder="Uh-oh! Watch your words, let's keep it friendly!"></textarea>
+
+                <button class="btn btn-submit" type="submit">Send Message</button>
+            </form>
+            <script src="./assets/js/email.js" defer></script>
+        </div>
+
+        <footer class="footer">
+            <section id="contact">
+                <!-- <h2>Let's stay connected</h2> -->
+                <!-- <p class="reach">If you have any questions or inquiries, feel free to reach out</p> -->
+                <div class="social-links">
+                    <a href="https://github.com/Student408" target="_blank" rel="noopener noreferrer"
+                        class="fab fa-github" title="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ranjanshettigar/" class="fab fa-linkedin" target="_blank"
+                        rel="noopener noreferrer" title="LinkedIn"></a>
+                    <a href="mailto: ranjanshettigar123@gmail.com" class="fas fa-envelope" target="_blank"
+                        title="Email"></a>
+                    <a href="https://www.youtube.com/@dropinxyz" target="_blank" rel="noopener noreferrer"
+                        class="fab fa-youtube" title="YouTube"></a>
+                    <a href="https://open.spotify.com/artist/06DMQXuBVV0Zs2COEdjE3q" target="_blank"
+                        rel="noopener noreferrer" class="fab fa-spotify" title="Spotify"></a>
+                    <a href="https://x.com/lokotwiststudio" target="_blank" rel="noopener noreferrer"
+                        class="fab fa-twitter" title="Twitter"></a>
+                    <a href="https://linktr.ee/THE.LOKO?subscribe" target="_blank" rel="noopener noreferrer"
+                        class="fas fa-link" title="Link"></a>
+                </div>
+                <p class="copy">&copy; 2024 Personal Portfolio. Made with ChatGPT & Claude.ai. All rights reserved.</p>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+</body>
+
+</html>
