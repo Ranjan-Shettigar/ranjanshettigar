@@ -1,4 +1,4 @@
-## Mr. Bean Portfolio Page
+## Portfolio Page
 
 **Live**: [Loko](https://ranjan.pages.dev/)
 
