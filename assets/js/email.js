@@ -13,7 +13,7 @@ function sendEmail(submitButton) {
         to_email: document.getElementById('to_email').value,
         message: document.getElementById('message').value
     };
-    fetch('https://loko.serv00.net/send_email.php', {
+    fetch('https://mail.loko.serv00.net/send_email.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

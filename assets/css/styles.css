@@ -155,19 +155,55 @@ p {
 .cta-button {
     background-color: var(--text-color);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: fadeIn 1s ease-out 0.6s backwards;
+    display: inline-block; /* Ensures the button behaves correctly */
+    text-decoration: none; 
 }
 
 .cta-button:hover {
     background-color: var(--primary-color);
     transform: translateY(-3px);
 }
+
+.btn-cv {
+    margin-left: 8px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease-out 0.6s backwards;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    display: inline-block; /* Ensures the button behaves correctly */
+}
+
+.btn-cv:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Optional keyframe for fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .profile-image {
     flex: 1;
