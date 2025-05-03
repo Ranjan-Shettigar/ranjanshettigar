@@ -47,57 +47,57 @@ const projects = [
         image: "./assets/img/linksync.svg",
         title: "Linksync",
         description: "LinkSync is your digital assistant for effortless link management, offering intuitive organization and powerful search features.",
-        githubLink: "https://github.com/Student408/LinkSync",
+        githubLink: "https://github.com/Ranjan-Shettigar/LinkSync",
         demoLink: "https://linksync.free.nf/"
     },
     {
         image: "./assets/img/trackit.svg",
         title: "Trackit",
         description: "A financial management tool for tracking expenses, budgeting, analyzing finances. ",
-        githubLink: "https://github.com/Student408/trackit",
+        githubLink: "https://github.com/Ranjan-Shettigar/trackit",
         demoLink: "https://trackitpay.vercel.app/"
     },
     {
         image: "./assets/img/taskminder.svg",
         title: "Taskminder",
         description: "A task reminder application helps individuals or teams manage tasks, appointments, deadlines, and commitments efficiently and effectively.",
-        githubLink: "https://github.com/Student408/TaskMinder",
-        demoLink: "https://github.com/Student408/TaskMinder/raw/main/TaskMinder.apk"
+        githubLink: "https://github.com/Ranjan-Shettigar/TaskMinder",
+        demoLink: "https://github.com/Ranjan-Shettigar/TaskMinder/raw/main/TaskMinder.apk"
     },
     {
         image: "./assets/img/skin_vision.svg",
         title: "Skin Vision",
         description: "The system identifies and classifies skin cancer images into five categories using transfer and ensemble learning.",
-        githubLink: "https://github.com/Student408/skin_cancer",
+        githubLink: "https://github.com/Ranjan-Shettigar/skin_cancer",
         demoLink: "https://skin-vision.streamlit.app/"
     },
     {
         image: "./assets/img/advaita.png",
         title: "Advaita 2024",
         description: "This project is a PHP-based system for managing a college fest, including database connectivity and payment integration.",
-        githubLink: "https://github.com/Student408/Advaita",
+        githubLink: "https://github.com/Ranjan-Shettigar/Advaita",
         demoLink: "https://advaita.rf.gd/"
     },
     {
         image: "./assets/img/club_coffee.png",
         title: "Club Coffee",
         description: "Club Coffee website, a visually appealing and responsive website designed to showcase a coffee brand and its products.",
-        githubLink: "https://github.com/Student408/club-coffee",
+        githubLink: "https://github.com/Ranjan-Shettigar/club-coffee",
         demoLink: "https://student408.github.io/club-coffee/"
     },
     {
         image: "./assets/img/quanta.webp",
         title: "Quanta",
         description: "Quanta uses Google's GenerativeAI for natural language processing, with a Flask backend enabling seamless web interface interactions.",
-        githubLink: "https://github.com/Student408/Quanta",
+        githubLink: "https://github.com/Ranjan-Shettigar/Quanta",
         demoLink: "https://quanta-6qsp.onrender.com/"
     },
     {
         image: "./assets/img/job_alert.svg",
         title: "Job Alert",
         description: "website built using PHP, MySQL, HTML, CSS, and JavaScript. It includes an admin page for inserting job details into the database. ",
-        githubLink: "https://github.com/Student408/JobAleart",
-        demoLink: "https://github.com/Student408/JobAleart"
+        githubLink: "https://github.com/Ranjan-Shettigar/JobAleart",
+        demoLink: "https://github.com/Ranjan-Shettigar/JobAleart"
     },
     {
         image: "./assets/img/iot.svg",
