@@ -44,6 +44,27 @@ document.getElementById('downArrow').addEventListener('click', function () {
 // Project data
 const projects = [
     {
+        image: "./assets/img/whisper_kannada.svg",
+        title: "Whisper Kannada",
+        description: "Fine-tuned OpenAI Whisper Small for Kannada ASR on ~300 hours of data using IAST Romanization via Aksharamukha for faster, more accurate inference.",
+        githubLink: "https://github.com/COILDOrg",
+        demoLink: "https://huggingface.co/coild"
+    },
+    {
+        image: "./assets/img/dhravani.svg",
+        title: "Dhravani",
+        description: "Web-based application developed for creating speech corpora for Automatic Speech Recognition (ASR) Models.",
+        githubLink: "https://github.com/COILDOrg",
+        demoLink: "https://coild-dhravani.hf.space"
+    },
+    {
+        image: "./assets/img/trype2script.svg",
+        title: "Trype2Script",
+        description: "This browser extension allows you to transliterate English (Roman script) text into various languages directly in any editable field on web pages.",
+        githubLink: "https://github.com/COILDOrg/Type2Script",
+        demoLink: "https://github.com/COILDOrg/Type2Script/releases/"
+    },
+    {
         image: "./assets/img/linksync.svg",
         title: "Linksync",
         description: "LinkSync is your digital assistant for effortless link management, offering intuitive organization and powerful search features.",
