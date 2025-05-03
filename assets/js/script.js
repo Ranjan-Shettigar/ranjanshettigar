@@ -59,7 +59,7 @@ const projects = [
     },
     {
         image: "./assets/img/type2script.svg",
-        title: "Trype2Script",
+        title: "Type2Script",
         description: "This browser extension allows you to transliterate English (Roman script) text into various languages directly in any editable field on web pages.",
         githubLink: "https://github.com/COILDOrg/Type2Script",
         demoLink: "https://github.com/COILDOrg/Type2Script/releases/"
