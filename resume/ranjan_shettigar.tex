@@ -1,0 +1,207 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry} % Control margins
+\usepackage{hyperref}
+\usepackage{titlesec} % Section formatting
+\usepackage{enumitem} % List customization
+\usepackage[english]{babel}
+\usepackage{ragged2e} % For justifying justification
+\usepackage{tgheros} % Use TeX Gyre Heros (Helvetica/Arial substitute)
+\usepackage{setspace} % For line spacing control
+\usepackage[nopatch=footnote]{microtype} % Better typography; skip footnote patch
+
+% --- Font Setup (Using TeX Gyre Heros as primary) ---
+\renewcommand{\familydefault}{\sfdefault} % Make sans-serif (now TeX Gyre Heros) the default
+
+% --- Margins (Adjust as needed) ---
+\geometry{
+    letterpaper,
+    top=0.75in,
+    bottom=0.75in,
+    left=0.75in,
+    right=0.75in
+}
+
+% --- Hyperlink Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ranjan Shettigar Resume},
+    pdfpagemode=FullScreen,
+    pdfborder={0 0 0}, % Remove borders around links
+}
+
+% --- Spacing Adjustments ---
+% Set line spacing slightly more relaxed than pure single spacing (optional, adjust 1.05 as needed)
+% \setstretch{1.05}
+% Or use singlespacing
+% \singlespacing
+\onehalfspacing
+
+% Space between paragraphs (like between job description paragraphs)
+\setlength{\parskip}{0.6em} % Slightly increased from 0.5em
+
+% Remove default paragraph indentation
+\setlength{\parindent}{0pt}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\fontsize{14pt}{16pt}\selectfont\bfseries\sffamily} % 14pt for section headings
+  {} % Label
+  {0em} % Sep
+  {}
+\titlespacing*{\section}
+  {0pt}
+  {2.0ex plus 1ex minus .2ex}
+  {1.3ex plus .2ex}
+
+% --- Customize lists ---
+\setlist[itemize]{
+    leftmargin=*,       % Indent relative to current margin
+    nosep,              % No vertical space between items in the same list level
+    itemsep=0.3em,      % Slightly increased vertical space between items (adjust as needed)
+    label=\textbullet   % Standard bullet point
+}
+
+% --- Define commands for Job/Project Titles ---
+\newcommand{\entrytitle}[4]{%
+    {\fontsize{12pt}{14pt}\selectfont\textbf{#1 | #2 | #3 | #4}}\\[\parskip] % Added space after subheading
+}
+\newcommand{\projecttitle}[2]{%
+    {\fontsize{12pt}{14pt}\selectfont\textbf{#1 | #2}}\\[\parskip] % Added space after subheading
+}
+
+% --- Define body text font size macro ---
+\newcommand{\bodyfont}{\fontsize{10pt}{12pt}\selectfont}
+
+% --- Disable page numbering ---
+\pagestyle{empty}
+
+% --- Contact link macros (phone/email) ---
+\newcommand{\phone}[1]{\href{tel:#1}{#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+
+% --- Document Start ---
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\fontsize{18pt}{22pt}\selectfont\bfseries RANJAN SHETTIGAR} \\[1.2ex]
+    {\fontsize{10pt}{12pt}\selectfont
+     UDUPI – 576102, INDIA | \phone{+91 9743771347} | \email{ranjanshettigar123@gmail.com} | 
+     \href{https://github.com/Ranjan-Shettigar}{GitHub} | 
+     \href{https://www.linkedin.com/in/ranjanshettigar}{LinkedIn} | 
+     \href{https://ranjan.pages.dev}{Portfolio}}
+\end{center}
+
+% --- Introduction ---
+{\bodyfont
+\justifying
+I am an innovative individual seeking employment as a creative associate. Given the opportunity, I believe I can offer your company innovative solutions.
+}
+
+% --- Experience Section ---
+\section*{EXPERIENCE}
+
+\entrytitle{Intern}{MIT}{Manipal, Karnataka}{2025}
+{\bodyfont
+\justifying
+During my internship, I researched and fine-tuned OpenAI's Whisper models for Kannada using datasets like FLEURS and OpenSLR, training on an NVIDIA A100 GPU. I successfully reduced the Word Error Rate (WER) of Whisper Tiny, Small, and Large V3 Turbo models from 100.7\% to 56.23\%, 100.4\% to \textbf{23.12\%}, and 100.09\% to 26.13\%, respectively. Additionally, I developed \textbf{Dhravani}, a multilingual speech corpus collection tool using Flask, Google OAuth2, and PostgreSQL, enabling audio recording, validation, and automatic syncing to Hugging Face. I deployed the project for \textbf{beta testing} and presented it at the Manipal Entrepreneurship Summit 2025. Furthermore, I created a browser extension called \textbf{Type2Script} for real-time transliteration across Indian languages, enhancing multilingual typing accessibility.
+}
+
+\entrytitle{Intern}{Exposys Data Labs}{Bangalore, Karnataka}{2023}
+{\bodyfont
+\justifying
+During my Web Development internship, I created "\textbf{Namaste}," a social media platform like Twitter, and gained practical experience in various aspects of web development.
+}
+
+% --- Education Section ---
+\section*{EDUCATION}
+
+{\bodyfont
+\begin{itemize}
+    \item \textbf{Bachelor of Engineering in Information Science \& Engineering | 2025} \\
+    NMAM Institute of Technology Nitte, Karkala, Karnataka
+    \item \textbf{Diploma - Electronics \& Communication Engineering | 2021} \\
+    Indira Shiva Rao Polytechnic, Udupi, Karnataka
+    \item \textbf{SSLC | 2016} \\
+    U Kamalabai High School, Kadiyali, Udupi, Karnataka
+\end{itemize}
+}
+
+% --- Projects Section ---
+\section*{PROJECTS}
+
+\projecttitle{Deep Learning based Skin Cancer Detection System}{2024}
+{\bodyfont
+\justifying
+Developed a CNN-based diagnostic model using MobileNetV2 and Xception architectures for accurate classification of skin lesions (melanoma, nevus, basal cell carcinoma, etc.) from dermoscopic images. Employed data augmentation, Grad-CAM for interpretability, and achieved \textbf{92.5\%} accuracy.
+}
+
+\projecttitle{Advaita – College Fest Management System}{2024}
+{\bodyfont
+\justifying
+Developed a PHP-based College Fest Management System with MySQL integration, manual payment setup, and Gmail SMTP for email notifications. Included secure config management and an admin dashboard for event administration.
+}
+
+\vspace{1.5em}
+
+\projecttitle{Task-Minder – Android Task Reminder Application}{2023}
+{\bodyfont
+\justifying
+Developed a simple and intuitive Android application designed to help users schedule and manage tasks, deadlines, and appointments. Key features include recurring reminders, popup notifications, calendar integration, and a user-friendly interface for efficient daily task tracking and organization.
+}
+
+\projecttitle{IoT based Biometric Fingerprint Attendance System}{2021}
+{\bodyfont
+\justifying
+Designed and developed a smart attendance system using Arduino, ESP8266, and R307 fingerprint sensor. Integrated biometric authentication with real-time data logging on ThingsBoard IoT platform. Implemented serial communication between Arduino and ESP8266, enabling secure cloud-based storage of attendance records for easy access and analysis.
+}
+
+% --- Side Projects Section ---
+\section*{SIDE PROJECTS}
+
+{\bodyfont
+\begin{itemize}
+    \item \textbf{Nextinbox:} An email platform for developers and businesses needing reliable automation.
+    \item \textbf{Quanta:} Al-powered chat application built with Google's Gemini API.
+    \item \textbf{LinkSync:} A simple web-based tool for organizing the links.
+    \item \textbf{Smart Dustbin:} Waste segregation dustbin using audio classification with Seed Studio XIAO.
+    \item \textbf{TrackItPay:} A financial management tool for tracking expenses, budgeting and analyzing finances.
+\end{itemize}
+}
+
+% --- Certifications Section ---
+\section*{CERTIFICATIONS}
+
+{\bodyfont
+\begin{itemize}
+    \item Postman API Fundamentals Student Experts
+    \item Career Essentials in Generative AI by Microsoft and LinkedIn.
+    \item CS50x: Introduction to Computer Science – Harvard University 2024
+\end{itemize}
+}
+
+% --- Skills Section ---
+\section*{SKILLS}
+
+{\bodyfont
+\begin{itemize}
+    \item Intermediate in: PCB designing in Multisim Software, Soldering, and MS Office.
+    \item Basic in: ARM Controller, Figma, Python, HTML, CSS.
+    \item Attention to details, Goal-oriented mindset, Task prioritization.
+\end{itemize}
+}
+
+% --- Hobbies Section ---
+\section*{HOBBIES}
+
+{\bodyfont
+\noindent Music Production, Video Editing, Listening Music, Vibe coding, Exploring new technologies.
+}
+
+\end{document}
+% --- End of Document ---
