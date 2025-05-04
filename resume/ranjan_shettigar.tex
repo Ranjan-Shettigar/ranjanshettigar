@@ -1,4 +1,4 @@
-\documentclass[10pt, letterpaper]{article}
+\documentclass[10pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{geometry} % Control margins
@@ -16,7 +16,7 @@
 
 % --- Margins (Adjust as needed) ---
 \geometry{
-    letterpaper,
+    a4paper,
     top=0.75in,
     bottom=0.75in,
     left=0.75in,
@@ -39,7 +39,9 @@
 % \setstretch{1.05}
 % Or use singlespacing
 % \singlespacing
-\onehalfspacing
+\onehalfspacing % \onehalfspacing sets line spacing to 1.5x normal between lines in a paragraph.
+% \setlength{\parskip}{0.6em} only adds space between paragraphs, not lines.
+% The quoted text is a single paragraph, so only 1.5x line spacing applies between lines.
 
 % Space between paragraphs (like between job description paragraphs)
 \setlength{\parskip}{0.6em} % Slightly increased from 0.5em
@@ -68,14 +70,14 @@
 
 % --- Define commands for Job/Project Titles ---
 \newcommand{\entrytitle}[4]{%
-    {\fontsize{12pt}{14pt}\selectfont\textbf{#1 | #2 | #3 | #4}}\\[\parskip] % Added space after subheading
+    {\fontsize{12pt}{14pt}\selectfont\textbf{#1 | #2 | #3 | #4}}\\[\parskip] % 12pt for job/project titles
 }
 \newcommand{\projecttitle}[2]{%
-    {\fontsize{12pt}{14pt}\selectfont\textbf{#1 | #2}}\\[\parskip] % Added space after subheading
+    {\fontsize{12pt}{14pt}\selectfont\textbf{#1 | #2}}\\[\parskip] % 12pt for project titles
 }
 
 % --- Define body text font size macro ---
-\newcommand{\bodyfont}{\fontsize{10pt}{12pt}\selectfont}
+\newcommand{\bodyfont}{\fontsize{10pt}{12pt}\selectfont\setstretch{1.5}} % 10pt for body text
 
 % --- Disable page numbering ---
 \pagestyle{empty}
@@ -89,7 +91,8 @@
 
 % --- Header ---
 \begin{center}
-    {\fontsize{18pt}{22pt}\selectfont\bfseries RANJAN SHETTIGAR} \\[1.2ex]
+    {\fontsize{18pt}{22pt}\selectfont\bfseries RANJAN SHETTIGAR} % 18pt for main header
+    \\[1.2ex]
     {\fontsize{10pt}{12pt}\selectfont
      UDUPI – 576102, INDIA | \phone{+91 9743771347} | \email{ranjanshettigar123@gmail.com} | 
      \href{https://github.com/Ranjan-Shettigar}{GitHub} | 
@@ -123,11 +126,13 @@ During my Web Development internship, I created "\textbf{Namaste}," a social med
 
 {\bodyfont
 \begin{itemize}
-    \item \textbf{Bachelor of Engineering in Information Science \& Engineering | 2025} \\
+    \item \textbf{Bachelor of Engineering in Information Science \& Engineering | 2025} \\[-0.5em]
     NMAM Institute of Technology Nitte, Karkala, Karnataka
-    \item \textbf{Diploma - Electronics \& Communication Engineering | 2021} \\
+
+    \item \textbf{Diploma - Electronics \& Communication Engineering | 2021} \\[-0.5em]
     Indira Shiva Rao Polytechnic, Udupi, Karnataka
-    \item \textbf{SSLC | 2016} \\
+
+    \item \textbf{SSLC | 2016} \\[-0.5em]
     U Kamalabai High School, Kadiyali, Udupi, Karnataka
 \end{itemize}
 }
@@ -146,8 +151,6 @@ Developed a CNN-based diagnostic model using MobileNetV2 and Xception architectu
 \justifying
 Developed a PHP-based College Fest Management System with MySQL integration, manual payment setup, and Gmail SMTP for email notifications. Included secure config management and an admin dashboard for event administration.
 }
-
-\vspace{1.5em}
 
 \projecttitle{Task-Minder – Android Task Reminder Application}{2023}
 {\bodyfont
