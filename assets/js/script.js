@@ -104,7 +104,7 @@ const projects = [
         title: "Club Coffee",
         description: "Club Coffee website, a visually appealing and responsive website designed to showcase a coffee brand and its products.",
         githubLink: "https://github.com/Ranjan-Shettigar/club-coffee",
-        demoLink: "https://student408.github.io/club-coffee/"
+        demoLink: "https://Ranjan-Shettigar.github.io/club-coffee/"
     },
     {
         image: "./assets/img/quanta.webp",
